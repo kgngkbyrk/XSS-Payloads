@@ -31,7 +31,7 @@ let clean = DOMPurify.sanitize(dirty);
 
 Kullanıcı girdisini bir olay işleyicisine güvenli bir şekilde gömmek için hem JavaScript bağlamı hem de HTML bağlamı ile ilgilenmeniz gerekir. Bu nedenle, önce girişten Unicode'dan kaçmanız ve ardından HTML kodlamanız gerekir:
 
-<a href="#" onclick="x='This string needs two layers of escaping'">test</a>
+" <a href="#" onclick="x='This string needs two layers of escaping'">test</a> "
 
 PHP'de htmlentities adlı varlıkları encode etmek için yerleşik bir işlev vardır. Bir HTML bağlamı içindeyken girdinizden kaçmak için bu işlevi çağırmalısınız.
 
